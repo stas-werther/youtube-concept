@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -19,7 +21,9 @@ body {
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 50;
 }
+
 .menu-button {
     padding: 0;
     display: flex;
@@ -31,17 +35,21 @@ body {
     border: none;
     cursor: pointer;
 }
+
 .menu-line {
     border-radius: 20px;
     display: block;
     width: 20px;
     height: 3px;
-    background:#1F2022;;
+    background: #1F2022;
+    ;
 }
+
 .logo {
     margin-left: 28px;
     margin-right: 59px;
 }
+
 .input-group {
     background-color: #EBEBEB;
     align-items: center;
@@ -52,6 +60,7 @@ body {
     max-width: 830px;
     width: 50%;
 }
+
 .input-search {
     background-color: transparent;
     border: none;
@@ -59,7 +68,9 @@ body {
     padding-bottom: 12px;
     padding-left: 23px;
     width: 100%;
+    outline: none;
 }
+
 .button-search {
     width: 19px;
     height: 19px;
@@ -67,32 +78,40 @@ body {
     cursor: pointer;
     padding: 0;
 }
+
 .icon-search {
     fill: #000;
 }
+
 .icons {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
+
 .icons-link {
     text-decoration: none;
     opacity: 0.24;
 }
+
 .icons-link:hover {
     opacity: 0.8;
 }
+
 .icons-link:not(:last-child) {
     margin-right: 50px;
 }
+
 .user {
     margin-left: 49px;
 }
+
 .user-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -103,6 +122,7 @@ body {
     padding-left: 32px;
     background-color: #fff;
 }
+
 .content {
     width: 100%;
     height: 400px;
@@ -110,60 +130,73 @@ body {
     padding-left: 16.5%;
     padding-top: 30px;
 }
+
 .nav-menu {
     margin-top: 0;
     margin-bottom: 60px;
     padding-left: 0;
     list-style-type: none;
 }
+
 .nav-item {
     margin-bottom: 28px;
 }
+
 .nav-item .icon {
     fill: #898989;
 }
+
 .nav-text {
     margin-left: 14px;
 }
+
 .nav-link {
     text-decoration: none;
     color: #898989;
     display: flex;
     align-items: center;
 }
+
 .nav-link:hover {
     color: #FF0000;
 }
+
 .nav-link:hover .icon {
     fill: #FF0000;
 }
+
 .nav-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
 }
+
 .channel {
     position: relative;
-    padding-bottom: 49px; 
+    padding-bottom: 49px;
 }
+
 .channel-avatar {
     width: 50px;
     height: 50px;
 }
+
 .channel-title {
     display: flex;
     align-items: center;
+    gap: 20px;
     text-decoration: none;
     color: #19202c;
     margin-bottom: 30px;
 }
+
 .channel-text {
-    margin-left: 20px;
     font-weight: bold;
     font-size: 26px;
     line-height: 33px;
 }
+
 .video-thumb {
     width: 250px;
     height: 150px;
@@ -171,26 +204,30 @@ body {
     border-radius: 14px;
     position: relative;
 }
+
 .video-card {
     width: 250px;
     margin-right: 40px;
 }
+
 .thumbnail {
     width: 250px;
     height: 150px;
     object-fit: cover;
 }
+
 .video-duration {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     font-size: 14px;
     line-height: 18px;
     color: white;
     padding: 3px 9px;
 }
+
 .video-title {
     font-weight: bold;
     font-size: 16px;
@@ -199,6 +236,7 @@ body {
     margin-top: 10px;
     margin-bottom: 4px;
 }
+
 .video-info {
     display: flex;
     align-items: center;
@@ -207,13 +245,16 @@ body {
     line-height: 16px;
     color: #C2C2C2;
 }
+
 .video-counter {
     display: flex;
 }
+
 .video-views {
     margin-right: 5px;
 }
-.video-views:after{
+
+.video-views:after {
     content: '';
     width: 2px;
     height: 2px;
@@ -222,9 +263,11 @@ body {
     vertical-align: middle;
     margin-left: 5px;
 }
+
 .channel-button {
     cursor: pointer;
 }
+
 .slider-buttons {
     position: absolute;
     right: 149px;
@@ -233,4 +276,78 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 66px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.swiper-slide {
+    width: 540px;
+}
+
+.recommended {
+    position: relative;
+    padding-bottom: 49px;
+}
+
+
+.video-rec {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.thumbnail-rec {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gastronomy {
+    padding-bottom: 64px;
+}
+
+.gastronomy-header {
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gastronomy-desc {
+    position: absolute;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+    left: 250px;
+    top: 18px;
+}
+
+.gastronomy-nav {
+    position: relative;
+}
+
+.gastronomy-button {
+    position: absolute;
+    right: 250px;
+    padding: 10px 0;
+    width: 154px;
+    background: #FF0000;
+    border-radius: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }
